@@ -17,7 +17,7 @@
 
                 <div class="list-group mb-3" ><!-- start sidebar menu -->
 
-                    <a href="profile.html" class="list-group-item list-group-item-action font-13 text-info"> <i class="fa fa-home align-middle me-2 font-13 text-secondary"></i>پیشخوان</a>
+                    <a href="{{route('dashboard')}}" class="list-group-item list-group-item-action font-13 text-info"> <i class="fa fa-home align-middle me-2 font-13 text-secondary"></i>پیشخوان</a>
 
                     <a href="profile-course.html" class="list-group-item list-group-item-action font-13 text-dark"><i class="fas fa-graduation-cap align-middle me-2 font-15  text-secondary"></i>دوره های شما</a>
 
@@ -26,7 +26,9 @@
                     <a href="profile-tickets.html" class="list-group-item list-group-item-action font-13 text-dark"><i class="fas fa-tags align-middle me-2 font-12 text-secondary"></i>تیکت ها </a>
 
                     <a href="profile-info.html" class="list-group-item list-group-item-action font-13 text-dark"><i class="fa fa-user-circle align-middle me-2 font-13  text-secondary"></i>جزئیات حساب کاربری</a>
-
+                    @if(auth()->user()->IsAdmin)
+                    <a href="/" class="list-group-item list-group-item-action font-13 text-dark"><i class="fas fa-tachometer-alt align-middle me-2 font-13  text-secondary"></i>پنل کاربری مدیر سایت</a>
+                    @endif
                     <a href="#" class="list-group-item list-group-item-action font-13 text-dark"><i class="fas fa-sign-out-alt align-middle me-2 font-13  text-secondary"></i> خروج</a>
 
                 </div><!-- end sidebar menu -->

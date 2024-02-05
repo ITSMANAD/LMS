@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
@@ -9,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>@yield('title')</title>
+    <title>@yield('title') | {{$settings->name}}</title>
 </head>
 <body>
 
@@ -17,7 +18,7 @@
 
     <div class="row py-2">
 
-        <div class="col-lg-2"><img src="assets/images/logo.jpg" alt="Daneshyar"></div><!-- logo -->
+        <div class="col-lg-2"><img src="{{$settings->logo}}" alt="{{$settings->name}}"></div><!-- logo -->
 
         <div class="col-lg-6 d-flex align-items-center ps-5 pe-0"><!-- start search box -->
 
@@ -177,7 +178,7 @@
 
     <div class="row">
 
-        <div class="col-6 ps-0"><img src="assets/images/logo.jpg" alt="Daneshyar"></div><!-- logo -->
+        <div class="col-6 ps-0"><img src="{{$settings->logo}}" alt="{{$settings->name}}"></div><!-- logo -->
 
         <div class="col-6 d-flex align-items-center justify-content-end">
 
@@ -327,7 +328,7 @@
 
                     <ul class="responsive-menu-level-1 ps-0 mt-5"><!-- start menu level 1 -->
 
-                        <li class="menu-item"><a href="#">صفحه اصلی</a></li>
+                        <li class="menu-item"><a href="/">صفحه اصلی</a></li>
 
                         <li class="menu-item has-sub-menu"><a href="#">دوره های آموزشی</a>
 
@@ -416,7 +417,7 @@
 
         <ul class="main-menu">
 
-            <li><a href="#">صفحه اصلی</a></li>
+            <li><a href="/">صفحه اصلی</a></li>
 
             <li><a href="#">دوره های آموزشی<i class="fa fa-angle-down align-middle ms-1"></i></a>
 
