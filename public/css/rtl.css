@@ -1,0 +1,81 @@
+body{
+    direction: rtl;
+    text-align: right;
+    font-family: 'Sahel', sans-serif;
+}
+.nav-item{
+    text-align:right !important;
+}
+
+.nav-link{
+    text-align:right !important;
+}
+.sidebar-heading{
+    text-align:right !important;
+}
+@media (min-width: 768px){
+    .sidebar .nav-item .nav-link[data-toggle=collapse]::after{
+        float: left;
+    }
+}
+.navbar-nav{
+   padding-right: 0;
+}
+#sidebarToggle::after {
+    content: '\f105' !important;
+}
+
+.sidebar.toggled #sidebarToggle::after {
+    content: '\f104' !important;
+}
+@media (min-width: 768px) {
+    .sidebar.toggled .nav-item .nav-link {
+            text-align: center !important;
+    }
+}
+.mr-auto{
+ margin-left: auto !important;
+    margin-right: unset !important;
+}
+.ml-auto{
+    margin-right: auto!important;
+    margin-left: unset !important;
+}
+.dropdown-menu-right{
+   left: 0;
+    right: auto!important;
+}
+.mr-2{
+    margin-left: .5rem!important;
+    margin-right: unset!important;
+}
+.dataTables_filter{
+    text-align: left!important;
+}
+div.dataTables_wrapper div.dataTables_filter input{
+    margin-right: .5rem;
+}
+.mr-3{
+    margin-left: 1rem!important;
+    margin-right: unset!important; 
+}
+.dropdown-item{
+    text-align: right!important;
+}
+.dropdown-menu{
+    text-align: right!important;
+}
+.input-group>.input-group-append>.btn{
+    border-radius: 10px 0 0 10px!important;
+
+}
+.input-group>.form-control:not(:last-child){
+    border-radius: 0 10px 10px 0 !important;
+}
+
+/*new */
+@media (min-width: 768px){
+  .sidebar .nav-item .nav-link[data-toggle=collapse].collapsed::after {
+    content: '\f104' !important;
+  }
+}

@@ -29,6 +29,8 @@ Route::middleware('auth')->group(function () {
 Route::middleware('admin')->group(function (){
     Route::controller(AdminController::class)->group(function (){
         Route::get('/admin','Index')->name('Admin');
+        Route::get('/admin/settings','Settings')->name('Settings');
+        Route::patch('/admin/settings','SettingsUpdate')->name('SettingsUpdate');
     });
 });
 
